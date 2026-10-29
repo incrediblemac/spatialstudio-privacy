@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spatial Studio Beta</title>
+<meta name="description" content="Join the Spatial Studio beta: 4K video with spatial audio for the Sony ECM-AX10 on Android.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0B0D12; --surface: #141A2B; --surface2: #1B2236; --line: #262E45;
+  --text: #F2F4FA; --dim: #A3ACC4; --accent: #7C9CFF; --accent-soft: #B7C6FF; --warm: #FF8A65;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 Inter, system-ui, sans-serif; }
+a { color: var(--accent); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+header { padding: 56px 0 28px; text-align: center; background: radial-gradient(ellipse at top, #1A2340 0%, var(--bg) 70%); }
+header img { width: 96px; height: 96px; border-radius: 24px; }
+h1 { font-size: clamp(32px, 7vw, 48px); font-weight: 800; letter-spacing: -0.02em; margin: 16px 0 6px; }
+.tag { color: var(--accent-soft); font-size: 19px; margin: 0; }
+.pill { display: inline-block; margin-top: 16px; padding: 4px 12px; border-radius: 99px; background: #3A2A14; color: #FFC46B; font-size: 14px; font-weight: 600; }
+h2 { font-size: 24px; margin: 44px 0 14px; }
+.steps { list-style: none; padding: 0; margin: 0; counter-reset: s; }
+.steps li { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 20px 20px 20px 72px; margin-bottom: 14px; counter-increment: s; }
+.steps li::before { content: counter(s); position: absolute; left: 20px; top: 20px; width: 36px; height: 36px; border-radius: 50%; background: var(--accent); color: #0B1230; font-weight: 800; display: grid; place-items: center; }
+.steps h3 { margin: 4px 0 6px; font-size: 19px; }
+.steps p { margin: 0 0 12px; color: var(--dim); }
+.btn { display: inline-block; background: var(--accent); color: #0B1230; text-decoration: none; font-weight: 700; padding: 12px 20px; border-radius: 14px; }
+.btn:hover { filter: brightness(1.08); }
+.note { background: var(--surface2); border-left: 3px solid var(--warm); border-radius: 10px; padding: 12px 16px; color: var(--dim); font-size: 15px; }
+.shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 8px; }
+.shots img { width: 100%; border-radius: 14px; border: 1px solid var(--line); }
+ul.plain { padding-left: 20px; color: var(--dim); }
+ul.plain li { margin-bottom: 6px; }
+details { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin-bottom: 10px; }
+summary { cursor: pointer; font-weight: 600; }
+details p { color: var(--dim); margin: 10px 0 2px; }
+footer { color: var(--dim); font-size: 14px; text-align: center; padding: 48px 0 40px; border-top: 1px solid var(--line); margin-top: 48px; }
+@media (max-width: 520px) { .shots { grid-template-columns: 1fr 1fr; } .shots img:last-child { display: none; } .steps li { padding-left: 64px; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="icon.png" alt="Spatial Studio icon">
+    <h1>Spatial Studio</h1>
+    <p class="tag">4K video with spatial audio for the Sony ECM-AX10, on Android</p>
+    <span class="pill">Beta · free</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <h2>How to join the beta</h2>
+  <ol class="steps">
+    <li>
+      <h3>Join the beta group</h3>
+      <p>Open the group and tap <b>Join group</b>. Use the same Google account that's signed in to the Play Store on your phone.</p>
+      <a class="btn" href="https://groups.google.com/g/spatial-studio-beta">Join the group</a>
+    </li>
+    <li>
+      <h3>Become a tester on Google Play</h3>
+      <p>Open the testing page and tap <b>Become a tester</b>. If it says the app isn't available, wait a few minutes after joining the group and try again.</p>
+      <a class="btn" href="https://play.google.com/apps/testing/com.mahfoozcc.spatialstudio">Become a tester</a>
+    </li>
+    <li>
+      <h3>Install from the Play Store</h3>
+      <p>Get the app from its Play Store page. It can take a little while to show up after you opt in. Updates arrive automatically like any other app.</p>
+      <a class="btn" href="https://play.google.com/store/apps/details?id=com.mahfoozcc.spatialstudio">Open in Play Store</a>
+    </li>
+    <li>
+      <h3>Stay in for at least 14 days</h3>
+      <p>Please keep the app installed and stay opted in for 14 days. Google requires a group of testers over that time before the app can be released publicly, so every tester helps.</p>
+    </li>
+  </ol>
+
+  <p class="note">Joining from a computer? That works too: do steps 1 and 2 in your browser with the same Google account, then install from the Play Store app on your phone.</p>
+
+  <h2>What you can do with it</h2>
+  <div class="shots">
+    <img src="1_camera.jpg" alt="Camera screen with the ECM-AX10 connected">
+    <img src="2_radar.jpg" alt="Audio recording with the direction radar">
+    <img src="5_export.jpg" alt="Export options including YouTube 360 spatial audio">
+  </div>
+  <ul class="plain">
+    <li>4K, 1080p or 720p video at 24/30/60 fps, HEVC or H.264, 10-bit HDR</li>
+    <li>Ambisonics (4-channel), binaural and stereo recording with a live direction radar</li>
+    <li>Pause and resume while recording</li>
+    <li>Export to YouTube 360 spatial audio, Eclipsa Audio, binaural, stereo, 5.1 and 7.1.4</li>
+    <li>Audiograms, wind reduction and multitrack projects</li>
+  </ul>
+
+  <h2>What you need</h2>
+  <ul class="plain">
+    <li>An Android phone running Android 10 or newer, with a USB-C port that supports USB host (OTG)</li>
+    <li>A Sony ECM-AX10 microphone for spatial audio (the phone's own mic works for basic recording)</li>
+  </ul>
+
+  <h2>Questions</h2>
+  <details>
+    <summary>The Play Store says the app isn't available</summary>
+    <p>Make sure you joined the group and tapped "Become a tester" with the same Google account that's on your phone. If you have several accounts on the phone, switch to that one in the Play Store. Group membership can take a few minutes to reach Google Play.</p>
+  </details>
+  <details>
+    <summary>How do I send feedback or report a bug?</summary>
+    <p>On the app's Play Store page there's a "Send private feedback" option for testers. You can also email <a href="mailto:fullscreendev@gmail.com">fullscreendev@gmail.com</a>.</p>
+  </details>
+  <details>
+    <summary>How do I leave the beta?</summary>
+    <p>Open the "Become a tester" page above and tap "Leave the program", then uninstall the app if you want to.</p>
+  </details>
+  <details>
+    <summary>Does the app collect my data?</summary>
+    <p>No. It has no internet permission, no ads and no analytics. Your recordings stay on your phone. Read the <a href="../">privacy policy</a>.</p>
+  </details>
+</main>
+
+<footer>
+  <div class="wrap">
+    Spatial Studio is an independent app. It is not affiliated with or endorsed by Sony.
+    "Sony" and "ECM-AX10" are trademarks of Sony Group Corporation.<br>
+    <a href="../">Privacy policy</a>
+  </div>
+</footer>
+</body>
+</html>
