@@ -46,7 +46,7 @@ Spatial Studio shares nothing on its own. When you tap **Share** on an export, A
 
 ## Backups
 
-Android cloud backup is turned off for this app (`allowBackup="false"`), so recordings and projects are not copied to your Google account.
+Android cloud backup and device-to-device transfer are both turned off for this app, so recordings, projects and settings are not copied to your Google account or to a new phone.
 
 ## Data retention and deletion
 
