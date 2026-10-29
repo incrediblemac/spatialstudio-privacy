@@ -1,6 +1,6 @@
 # Privacy Policy: Spatial Studio
 
-**Last updated: October 29, 2026**
+**Last updated: October 29, 2026** (built-in mic during ECM-AX10 audio takes, phone mic backup)
 
 This policy covers the Android app **Spatial Studio** (package `com.mahfoozcc.spatialstudio`), an independent app for recording video and spatial audio with the Sony ECM-AX10 microphone.
 
@@ -13,6 +13,7 @@ Spatial Studio does not collect, upload, sell or share any personal data. The ap
 - **Recordings:** video and audio takes you record, plus their thumbnails and waveform previews. These are stored in the app's private storage.
 - **Projects:** the video and multitrack audio projects you build from your takes.
 - **Settings:** your capture and app preferences (resolution, frame rate, haptics and so on).
+- **Phone mic backup (optional, off by default):** if you turn it on, a mono recording from the phone's built-in mic is saved next to each ECM-AX10 audio take, in the app's private storage.
 - **Exports:** files you export are saved to your phone's shared storage, in `Movies/Spatial Studio` or `Music/Spatial Studio`, where other apps like your gallery can see them.
 
 None of this is uploaded anywhere by the app.
@@ -21,6 +22,7 @@ None of this is uploaded anywhere by the app.
 
 - **Camera:** to record video. Only used while the capture screen is open. You can use audio-only mode without granting it.
 - **Microphone:** to record audio from the ECM-AX10 or the phone's built-in mic, and to show live level meters and the wind warning. Required, since recording sound is the core of the app. Live audio is used only on-device for the meters; it is saved only when you press record.
+- **Built-in mic during ECM-AX10 audio recordings:** while an audio take is recorded from the ECM-AX10, the app also keeps the phone's built-in mic open so the phone doesn't pause the app when the screen turns off. That audio is discarded and never saved or sent anywhere, unless you turn on Phone mic backup, which saves it on your device only. You can turn this off in Settings → Capture → Keep recording with the screen off.
 - **USB access:** to connect to the ECM-AX10 microphone. Android asks for your permission when the mic is plugged in. The app reads audio and the mic's switch settings, and nothing else.
 - **Notifications:** to show recording and export progress. Optional; recording and exporting still work without it.
 - **Foreground service (microphone):** keeps a recording going if you switch apps or the screen turns off, with a visible notification.
